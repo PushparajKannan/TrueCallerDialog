@@ -16,7 +16,7 @@ import java.util.*
 class Callreceiver : PhonecallReceiver()
 {
     override fun onIncomingCallStarted(ctx: Context?, number: String?, start: Date?) {
-      //  Toast.makeText(ctx, "number-->$number", Toast.LENGTH_LONG).show()
+       Toast.makeText(ctx, "number-->$number", Toast.LENGTH_LONG).show()
 
 
         number?.let {
@@ -29,7 +29,7 @@ class Callreceiver : PhonecallReceiver()
 
     override fun onOutgoingCallStarted(ctx: Context?, number: String?, start: Date?) {
 
-       // Toast.makeText(ctx, "number-->$number", Toast.LENGTH_LONG).show()
+       Toast.makeText(ctx, "number-->$number", Toast.LENGTH_LONG).show()
        // Log.e("TAG", "--->onOutgoingCallStarted")
         number?.let {
             callDialog(ctx,it)
@@ -87,9 +87,10 @@ class Callreceiver : PhonecallReceiver()
 
                     Log.e("dabase-->","-->${it.size}")
 
+
                     if(it.size>0) {
 
-                        delay(3000L)
+                        delay(2000L)
 
                         val i = Intent(context, DialogCheckActivity::class.java)
                         i.putExtra("model",it.get(0))
