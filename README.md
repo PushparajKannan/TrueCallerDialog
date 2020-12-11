@@ -16,3 +16,8 @@
 #APK File:
 
 -->  https://drive.google.com/file/d/1GWw2KqGdO2z0pa5eiSMHqzQCRySYDuVh/view?usp=sharing
+
+
+#Tested Device
+
+Redmi 9A (android version 9.0)
