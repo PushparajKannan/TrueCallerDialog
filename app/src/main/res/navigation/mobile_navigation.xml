@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/nav_main">
+
+    <fragment
+        android:id="@+id/nav_main"
+        android:name="com.example.turecallerdialog.ui.fragment.MainFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/navigate_to_contact_fragment"
+            app:destination="@id/nav_contact"
+            >
+
+            <argument
+                android:name="type"
+                app:argType="string"
+                android:defaultValue="foster"/>
+
+        </action>
+
+
+
+
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.turecallerdialog.ui.fragment.ContactFragment"
+        android:label="Conatact"
+        tools:layout="@layout/fragment_contact">
+
+        <argument
+            android:name="type"
+            app:argType="string"
+            android:defaultValue="foster"/>
+
+
+
+
+
+    </fragment>
+
+</navigation>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TureCallerDialog</string>
+
+    <string name="permission_denied_explanation">You need to allow all Permission to open this app</string>
+    <string name="settings">Settings</string>
+
+</resources>
